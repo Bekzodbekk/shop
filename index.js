@@ -40,3 +40,21 @@ window.onscroll = ()=>{
     shoppingCart.classList.remove('active')
     searchForm.classList.remove('active')
 }
+
+
+var swiper = new Swiper(".product-slider", {
+    loop:true,
+    slidesPerView: 1,
+    spaceBetween: 10,
+    breakpoints: {
+      640: {
+        slidesPerView: 1,
+      },
+      768: {
+        slidesPerView: 2,
+      },
+      1024: {
+        slidesPerView: 3,
+      },
+    },
+  });
